@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("fonts/GothamBookRegular.otf");
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("fonts/GothamLight.otf");
+}
+
+@font-face {
+  font-family: "Gotham Con Bold";
+  src: url("fonts/GothamCondensedBold.otf");
+}
+@font-face {
+  font-family: "Gotham Condensed";
+  src: url("fonts/GothamCondensedMedium.otf");
+}
+
+@font-face {
+  font-family: "Gotham Con Light";
+  src: url("fonts/GothamCondensedLight.otf");
+}
+
+@font-face {
+  font-family: "Freight Big Light Regular";
+  src: url("fonts/FreightBigLightRegular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+p {
+  font-family: "fonts/GothamBook.otf", "Gotham Book", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  padding-bottom: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #b05045;
+}
+
+h2 {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-size: 10rem;
+  color: #b05045;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+h3 {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  color: #fef9ef;
+  font-size: 5.6rem;
+}
+
+h4 {
+  font-family: "fonts/GothamCondensedLight.otf", "Gotham Con Light", sans-serif;
+  font-size: 6rem;
+  color: #b05045;
+  text-align: center;
+}
+
+h5 {
+  color: #b05045;
+  font-size: 1.9rem;
+  padding: 1rem;
+  font-family: "fonts/GothamLight.otf", "Gotham Light", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.container-lrg {
+  width: 1400px;
+  /* margin: auto; */
+  /* height: 950px; */
+}
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+.margin-std {
+  margin-bottom: 7rem;
+}
+
+.sml {
+  display: flex;
+  height: 450px;
+  background-color: #fef9ef;
+}
+
+.btn-section {
+  background-color: #b05045;
+  border: none;
+  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  font-size: 3rem;
+  color: #fef9ef;
+  padding: 2.4rem 8.4rem;
+  cursor: pointer;
+}

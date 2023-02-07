@@ -1,0 +1,458 @@
+/* PROMO-BANNER */
+.promo-banner {
+  background-image: url("img/promo-banner.png");
+  font-size: 4.8rem;
+  color: #fef9ef;
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 2.2rem auto;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  font-size: 3.4rem;
+  width: 1250px;
+}
+
+.delivery-choice {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  font-family: "fonts/GothamBook.otf", "Gotham Book", sans-serif;
+  color: #b07445;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  width: 240px;
+  align-self: flex-end;
+  margin-bottom: 2.2rem;
+  cursor: pointer;
+}
+
+.del {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #b07445;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+
+.flag {
+  width: 45px;
+}
+
+.del-chev {
+  font-size: 32px;
+}
+
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* PROMO-HEADER */
+.promo-header {
+  background-image: url("img/promo-header.jpg");
+  background-size: cover;
+}
+
+.promo-header-info {
+  padding: 3.6rem 3.6rem;
+}
+
+.btn {
+  background-color: #fef9ef;
+  border: none;
+  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  font-size: 3.4rem;
+  color: #b05045;
+  padding: 1.2rem 6.2rem;
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+}
+
+.promo-p {
+  color: #fef9ef;
+  font-size: 4rem;
+  line-height: 1.2;
+  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* SECTION - HERO  */
+.hero-container {
+  width: 1400px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr;
+  gap: 20px;
+}
+
+.img-container {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.hero-link {
+  font-size: 4.2rem;
+  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.one {
+  background-image: url(img/hero-shop.jpg);
+  transition: 3s;
+}
+
+.one:hover {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.3),
+      rgba(10, 10, 10, 0.3)
+    ),
+    url(img/hero-shop.jpg);
+  /* filter: brightness(40%); */
+}
+
+.two {
+  grid-row: 2 span;
+  background-image: url(img/hero-about.png);
+  transition: 3s;
+}
+
+.two:hover {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.3),
+      rgba(10, 10, 10, 0.3)
+    ),
+    url(img/hero-about.png);
+  /* filter: brightness(40%); */
+}
+.three {
+  background-image: url(img/hero-app.png);
+  transition: 3s;
+}
+
+.three:hover {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.3),
+      rgba(10, 10, 10, 0.3)
+    ),
+    url(img/hero-app.png);
+  /* filter: brightness(40%); */
+}
+
+.four {
+  background-image: url(img/hero-cookbooks.jpg);
+  transition: 3s;
+}
+
+.four:hover {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.3),
+      rgba(10, 10, 10, 0.3)
+    ),
+    url(img/hero-cookbooks.jpg);
+  /* filter: brightness(40%); */
+}
+
+.five {
+  background-image: url(img/hero-plants.jpg);
+  transition: 3s;
+}
+
+.five:hover {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.3),
+      rgba(10, 10, 10, 0.3)
+    ),
+    url(img/hero-plants.jpg);
+  /* filter: brightness(40%); */
+}
+
+.img-container:hover :not(img) {
+  display: block;
+}
+
+/* SECTION - SHOP  */
+.shop {
+  background-color: #fef9ef;
+  position: relative;
+  height: 1050px;
+}
+
+.shop-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  padding-top: 6.8rem;
+  margin-bottom: 2rem;
+  border: none;
+  flex: 1 1 0;
+}
+
+.shop-ind {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b05045;
+  font-size: 4.2rem;
+  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  background-color: #fef9ef;
+  cursor: pointer;
+}
+
+.btn-shop {
+  margin: 2rem;
+  text-align: center;
+}
+
+.btn-center-shop {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SECTION - RECIPES  */
+.recipes {
+  background-color: #fef9ef;
+  position: relative;
+  height: 1000px;
+}
+
+.recipe-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  padding-top: 6.8rem;
+}
+
+.btn-recipes {
+  margin: 2rem;
+  text-align: center;
+}
+
+.btn-center-recipes {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SECTION - APP */
+.app-img {
+  flex: 1 1 0;
+  background-color: #d9480f;
+}
+
+.app-store-links {
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem 16rem;
+  gap: 2rem;
+}
+
+.app-img-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.app-info {
+  flex: 1 1 0;
+  align-self: center;
+  text-align: center;
+}
+
+.info-pad {
+  padding: 0 8rem;
+  padding-bottom: 3.2rem;
+}
+
+/* SECTION - COOKBOOKS */
+.cookbooks {
+  position: relative;
+}
+
+.cookbooks-img {
+  height: 100%;
+  width: 100%;
+}
+
+.cookbooks-info {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #fef9ef;
+  text-align: center;
+  width: 650px;
+  padding: 5rem 4rem;
+}
+
+/* SECTION - PODCAST */
+.podcast-img {
+  flex: 1 1 0;
+}
+
+.podcast-info {
+  flex: 1 1 0;
+  align-self: center;
+  text-align: center;
+}
+
+/* SECTION - RESTAURANT */
+.restaurant-img {
+  flex: 1 1 0;
+}
+
+.restaurant-info {
+  flex: 1 1 0;
+  align-self: center;
+  text-align: center;
+}
+
+/* SECTION - ABOUT US */
+.about-us-img {
+  flex: 1 1 0;
+}
+
+.about-us-info {
+  flex: 1 1 0;
+  align-self: center;
+  text-align: center;
+}
+
+/* SECTION - CTA */
+.cta {
+  margin-bottom: 2.4rem;
+  height: 300px;
+}
+
+.cta,
+input,
+select,
+.cta-btn {
+  background-color: #b05045;
+  border: none;
+}
+
+#h2-cta {
+  font-size: 8.2rem;
+  color: #fef9ef;
+}
+
+form {
+  padding-top: 3.2rem;
+  text-align: center;
+}
+
+input,
+select,
+.cta-btn {
+  font-size: 3.2rem;
+  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  font-weight: 400;
+  color: #fef9ef;
+}
+
+input,
+select {
+  width: 30rem;
+  border-bottom: 5px solid #fef9ef;
+  margin: 0 1rem;
+}
+
+::placeholder,
+select {
+  color: #d8a8a2;
+  font-size: 4rem;
+}
+
+.cta-btn {
+  font-size: 4.6rem;
+}
+
+/* FOOTER */
+
+footer {
+  color: #b05045;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.social-media-links {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 8.4rem;
+  padding: 2.4rem 0;
+  border-bottom: 1.5px solid #b05045;
+}
+
+.social-media-link:link,
+.social-media-link:visited {
+  color: #b05045;
+}
+
+.footer-links {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 6.6rem 0;
+  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: #b05045;
+}
+
+.footer-info {
+  font-size: 1.6rem;
+  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  margin-bottom: 12.8rem;
+}
+
+.footer-info-font {
+  font-family: "fonts/GothamCondensedLight.otf", "Gotham Con Light", sans-serif;
+  padding-bottom: 2.4rem;
+}
+
+.a-footer {
+  text-decoration: underline;
+}
