@@ -1,0 +1,579 @@
+/* 1200 px */
+@media (max-width: 75em) {
+  /* GENERAL  */
+  .container {
+    width: 900px;
+  }
+
+  .sml {
+    height: 300px;
+  }
+
+  .container-lrg {
+    width: 1000px;
+    height: 650px;
+  }
+
+  .container-lrg-flex {
+    gap: 1rem;
+    padding-top: 1.2rem;
+  }
+
+  /* HEADER */
+  .nav-menu--1 {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 100px;
+  }
+
+  .menu-nav--basket {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-btn {
+    display: flex;
+    cursor: pointer;
+  }
+
+  /* PROMO-HEADER */
+  .nutbutter-img {
+    right: 0%;
+    bottom: 0%;
+  }
+
+  .promo-header-img {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  /* SECTION - HERO  */
+  .hero-container {
+    height: 500px;
+  }
+
+  /* SECTION - SML CONTAINER  */
+  .info-pad {
+    padding-bottom: 1.2rem;
+  }
+}
+
+/* 928px///////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 58em) {
+  /* GENERAL  */
+  h4 {
+    margin-top: 2rem;
+  }
+
+  h5 {
+    padding-top: 0;
+  }
+
+  .container {
+    width: 700px;
+  }
+  .container-lrg {
+    width: 800px;
+    height: 550px;
+  }
+
+  /* HEADER */
+  .nav-menu--2 {
+    display: none;
+  }
+
+  /* PROMO-HEADER */
+  .nutbutter-img {
+    right: -30%;
+    bottom: 0%;
+  }
+
+  .promo-header-img {
+    display: none;
+  }
+
+  .promo-p {
+    padding-bottom: 0;
+  }
+
+  /* SECTION - HERO  */
+  .hero-container {
+    height: 350px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .one {
+    grid-column: 2/3;
+    grid-row: 1 / span 5;
+  }
+
+  .two {
+    grid-column: 1/2;
+    grid-row: 1 / span 9;
+  }
+
+  .three {
+    grid-column: 2/3;
+    grid-row: 6 / -1;
+    background-position: 50%;
+    transition: 0s;
+  }
+
+  .four {
+    grid-column: 3/4;
+    grid-row: 1 / span 4;
+  }
+
+  .five {
+    grid-column: 3/4;
+    grid-row: 5 / -1;
+  }
+
+  /* SECTION - RECIPES  */
+  .recipe-imgs {
+    width: 30%;
+    height: 30%;
+  }
+
+  /* SECTION - APP */
+  #btn-section--app {
+    padding: 1.6rem 6rem;
+  }
+
+  .app-info-pad {
+    padding: 0 3rem;
+  }
+
+  .app-store-links {
+    padding: 2rem 4rem;
+    gap: 2rem;
+  }
+
+  .sml-img {
+    object-fit: contain;
+  }
+
+  /* SECTION - COOKBOOKS */
+  .cookbooks-info {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  .cookbooks-info--p {
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+
+  /* SECTION - PODCAST */
+  .sml-img-responsive {
+    object-fit: cover;
+  }
+
+  /* SECTION - RESTAURANT */
+  .restaurant-info-pad {
+    padding: 0 2rem;
+  }
+
+  /* SECTION - ABOUT US */
+  .about-info-pad {
+    padding: 0 2rem;
+  }
+
+  /* SECTION - SML CONTAINER  */
+  .info-pad {
+    padding-bottom: 2.8rem;
+  }
+
+  /* SECTION - CTA */
+  .cta {
+    height: 400px;
+  }
+
+  #h2-cta {
+    font-size: 5.2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  #first-name,
+  #email,
+  #country {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input,
+  select {
+    width: 20rem;
+    border-bottom: 3px solid #fef9ef;
+    margin: 0;
+  }
+
+  .cta-btn {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* 736px///////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 46em) {
+  /* GENERAL  */
+  .container {
+    width: 600px;
+  }
+  .container-lrg {
+    width: 700px;
+    height: 480px;
+  }
+
+  .sml {
+    height: 350px;
+  }
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .logo-container {
+    align-self: center;
+  }
+
+  .logo {
+    height: 180px;
+  }
+  .delivery-choice {
+    position: absolute;
+    right: -20px;
+    top: -145px;
+  }
+
+  /* PROMO-HEADER */
+  .nutbutter-img {
+    right: -15%;
+    bottom: 0%;
+  }
+
+  /* SECTION - HERO  */
+  .hero-container {
+    height: 300px;
+    gap: 10px;
+  }
+
+  /* SECTION - APP */
+  #btn-section--app {
+    padding: 1.6rem 2.8rem;
+  }
+
+  .app-info-pad {
+    padding: 0 2.2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* SECTION - COOKBOOKS */
+  .cookbooks {
+    height: 350px;
+  }
+
+  .cookbooks-img {
+    object-fit: cover;
+  }
+
+  .cookbooks-info {
+    width: 80%;
+  }
+
+  .cookbooks-info--p {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* SECTION - PODCAST */
+  .podcast-img {
+    object-position: left bottom;
+  }
+
+  /* FOOTER */
+  footer {
+    width: 600px;
+  }
+
+  .footer-links {
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 4.2rem 0;
+  }
+
+  .footer-link--five {
+    grid-column: 3/4;
+  }
+
+  .footer-link--start {
+    justify-self: start;
+  }
+
+  .footer-link--end {
+    justify-self: end;
+  }
+
+  #h2-cta {
+    font-size: 4.4rem;
+  }
+
+  #first-name,
+  #email,
+  #country {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cta-btn {
+    margin-left: 0;
+  }
+}
+
+/* 640px///////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 40em) {
+  /* GENERAL  */
+  h2 {
+    font-size: 4.8rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  h5 {
+    padding-top: 1rem;
+  }
+
+  .container {
+    width: 450px;
+  }
+  .container-lrg {
+    width: 550px;
+    height: 950px;
+  }
+
+  .container-lrg-flex {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .images {
+    margin-top: 1.4rem;
+    object-fit: cover;
+  }
+
+  .margin-std {
+    margin-bottom: 4rem;
+  }
+
+  .sml {
+    flex-direction: column-reverse;
+    width: 425px;
+    height: 570px;
+    margin: 0 auto 4rem;
+  }
+
+  .sml-pod-aboutus {
+    flex-direction: column;
+  }
+
+  #btn-section--app {
+    padding: 1.6rem 10rem;
+  }
+
+  /* PROMO-BANNER */
+  .promo-banner {
+    font-size: 2.4rem;
+    padding: 0.4rem 0;
+  }
+
+  /* HEADER */
+  header {
+    gap: 60px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .delivery-choice {
+    position: absolute;
+    right: 140px;
+    top: -70px;
+  }
+
+  .nav-menu--3 {
+    position: absolute;
+    right: 90px;
+    top: -65px;
+  }
+
+  /* PROMO-HEADER */
+  .promo-p {
+    font-size: 2.8rem;
+    padding-right: 15rem;
+  }
+
+  .promo-header-info .btn {
+    font-size: 2.2rem;
+    padding: 0.68rem 4.2rem;
+    margin-top: 1rem;
+  }
+
+  .nutbutter-img {
+    right: 0%;
+    bottom: 0%;
+  }
+
+  /* SECTION - HERO  */
+  .hero-container {
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  .one {
+    grid-column: 2/3;
+    grid-row: 1 / span 3;
+  }
+
+  .two {
+    grid-column: 1/2;
+    grid-row: 1 / span 6;
+  }
+
+  .three {
+    grid-column: 1/2;
+    grid-row: 7 / -1;
+  }
+
+  .four {
+    grid-column: 2/3;
+    grid-row: 4 / span 3;
+  }
+
+  .five {
+    grid-column: 2/3;
+    grid-row: 7 / -1;
+  }
+
+  /* SECTION - SHOP  */
+  .container-lrg-flex--shop-mrg {
+    margin: 2rem 6rem;
+  }
+
+  .container-lrg-btn--shopall {
+    grid-column: 1 / span 4;
+    grid-row: 1/2;
+  }
+
+  .container-lrg-btn--breakfast {
+    grid-column: 5 / span 4;
+    grid-row: 1/2;
+  }
+
+  .container-lrg-btn--snacks {
+    grid-column: 3 / span 4;
+    grid-row: 2/3;
+  }
+
+  .btn-center-shop {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* SECTION - RECIPES  */
+  .container-lrg--recipes {
+    height: 540px;
+  }
+
+  .container-lrg-flex--recipes {
+    display: flex;
+  }
+
+  .container-lrg-flex--recipes-mrg {
+    margin: 2rem 6rem;
+  }
+
+  .recipe-imgs-1,
+  .recipe-imgs-2 {
+    width: 50%;
+  }
+
+  .recipe-imgs-3 {
+    display: none;
+  }
+
+  /* SECTION - APP */
+  .app-store-links {
+    padding: 2rem 7rem;
+    gap: 1rem;
+  }
+
+  /* SECTION - COOKBOOKS */
+  .cookbooks {
+    height: 400px;
+  }
+
+  .cookbooks-info {
+    width: 98%;
+    padding: 2rem 0 3rem;
+  }
+
+  .cookbooks-info--p {
+    width: 100%;
+    padding: 0 2rem 2rem;
+  }
+
+  /* SECTION - PODCAST */
+  .podcast-info-pad {
+    padding: 0 2.4rem 2rem;
+  }
+
+  /* SECTION - RESTAURANT */
+  .restaurant-info-pad {
+    padding: 0.5rem 2.8rem 2rem;
+  }
+
+  /* SECTION - ABOUT US */
+  .about-info-pad {
+    padding: 0.5rem 2.8rem 3rem;
+  }
+
+  /* FOOTER */
+  footer {
+    width: 450px;
+  }
+
+  .footer-links {
+    width: 450px;
+    gap: 5px;
+  }
+
+  .footer-link--two {
+    grid-column: 2 /3;
+    grid-row: 1 / span 2;
+  }
+}

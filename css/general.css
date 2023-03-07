@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/GothamBookRegular.otf");
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../fonts/GothamLight.otf");
+}
+
+@font-face {
+  font-family: "Gotham Con Bold";
+  src: url("../fonts/GothamCondensedBold.otf");
+}
+@font-face {
+  font-family: "Gotham Condensed";
+  src: url("../fonts/GothamCondensedMedium.otf");
+}
+
+@font-face {
+  font-family: "Gotham Con Light";
+  src: url("../fonts/GothamCondensedLight.otf");
+}
+
+@font-face {
+  font-family: "Freight Big Light Regular";
+  src: url("../fonts/FreightBigLightRegular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "../fonts/GothamCondensedMedium.otf", "Gotham Condensed",
+    sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+p {
+  font-family: "../fonts/GothamBook.otf", "Gotham Book", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding-bottom: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #b05045;
+}
+
+h2 {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-size: 7.6rem;
+  color: #b05045;
+  text-align: center;
+  padding-top: 3.2rem;
+}
+
+h3 {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  color: #fef9ef;
+  font-size: 4.8rem;
+}
+
+h4 {
+  font-family: "../fonts/GothamCondensedLight.otf", "Gotham Con Light",
+    sans-serif;
+  font-size: 4.6rem;
+  color: #b05045;
+  text-align: center;
+}
+
+h5 {
+  color: #b05045;
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-family: "../fonts/GothamLight.otf", "Gotham Light", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.container-lrg {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  left: -50px;
+  background-color: #fef9ef;
+  position: relative;
+  height: 750px;
+}
+
+.container-lrg-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  padding-top: 2.2rem;
+  border: none;
+}
+
+.container-lrg-btn {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+  margin-top: 1.4rem;
+  width: 100%;
+}
+
+.margin-std {
+  margin-bottom: 7rem;
+}
+
+.sml {
+  display: flex;
+  justify-content: space-evenly;
+  height: 350px;
+  background-color: #fef9ef;
+}
+
+.sml-flex {
+  flex: 1 1 0;
+  align-self: center;
+  text-align: center;
+}
+
+.container-sml-img {
+  background-color: #d9480f;
+  flex: 1;
+}
+
+.sml-img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-section {
+  background-color: #b05045;
+  border: none;
+  font-family: "../fonts/GothamCondensedMedium.otf", "Gotham Condensed",
+    sans-serif;
+  font-size: 2.4rem;
+  color: #fef9ef;
+  padding: 1.6rem 6.4rem;
+  cursor: pointer;
+}

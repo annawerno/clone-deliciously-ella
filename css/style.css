@@ -1,7 +1,60 @@
+/* MENU OVERLAY */
+.overlay-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #b05045;
+  color: #fef9ef;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1rem;
+  z-index: 1;
+  display: none;
+}
+
+.overlay-open .overlay-container {
+  display: flex;
+}
+.menu-overlay-icon {
+  font-size: 3.4rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.menu-overlay-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 4rem;
+  margin-left: 3rem;
+  list-style: none;
+}
+
+.menu-overlay {
+  padding: 1.6rem 0;
+  border-bottom: 0.25px solid rgb(254, 249, 239, 0.4);
+  cursor: pointer;
+}
+
+.menu-overlay a {
+  color: #fef9ef;
+  font-size: 2.2rem;
+}
+
+.menu-overlay-chevron {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chevron {
+  font-size: 2.6rem;
+}
+
 /* PROMO-BANNER */
 .promo-banner {
-  background-image: url("img/promo-banner.png");
-  font-size: 4.8rem;
+  background-image: url("../img/promo-banner.png");
+  font-size: 3.6rem;
   color: #fef9ef;
   padding: 0.8rem 0;
   text-align: center;
@@ -12,41 +65,57 @@ header {
   display: flex;
   padding: 2rem 0;
   justify-content: space-between;
-  gap: 50px;
-  margin: 2.2rem auto;
+  width: 95%;
+  margin-left: 40px;
 }
 
 .logo {
-  height: 80px;
+  height: 100px;
 }
 
 .nav-container {
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
-  font-size: 3.4rem;
-  width: 1250px;
+  font-family: "../fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  font-size: 2.8rem;
+  gap: 70px;
+}
+
+.menu-btn {
+  gap: 10px;
+  display: none;
+}
+
+.menu-icon {
+  color: #b05045;
+  font-weight: bold;
+}
+
+.close-icon {
+  color: #fef9ef;
+  display: none;
 }
 
 .delivery-choice {
   border: none;
   background: none;
-  font-size: 2.2rem;
-  font-family: "fonts/GothamBook.otf", "Gotham Book", sans-serif;
+  font-size: 1.6rem;
+  font-family: "../fonts/GothamBook.otf", "Gotham Book", sans-serif;
   color: #b07445;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.5px;
-  width: 240px;
+  width: 200px;
   align-self: flex-end;
-  margin-bottom: 2.2rem;
+  margin: 0.4rem 1.6rem 0.8rem;
   cursor: pointer;
 }
 
@@ -55,16 +124,16 @@ header {
   justify-content: space-between;
   align-items: center;
   border: 1px solid #b07445;
-  padding: 0.6rem;
+  padding: 0.4rem 1.4rem;
   border-radius: 10px;
 }
 
 .flag {
-  width: 45px;
+  width: 32px;
 }
 
 .del-chev {
-  font-size: 32px;
+  font-size: 2.4rem;
 }
 
 .dropdown {
@@ -75,53 +144,64 @@ header {
 }
 /* PROMO-HEADER */
 .promo-header {
-  background-image: url("img/promo-header.jpg");
-  background-size: cover;
+  background-color: #27483e;
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-header-info {
-  padding: 3.6rem 3.6rem;
+  padding: 1.6rem 3.6rem;
+  position: relative;
 }
 
-.btn {
+.nutbutter-img {
+  height: 80%;
+  position: absolute;
+  right: -20%;
+  bottom: 0%;
+}
+
+.promo-header-info .btn {
   background-color: #fef9ef;
   border: none;
-  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
-  font-size: 3.4rem;
-  color: #b05045;
-  padding: 1.2rem 6.2rem;
-  margin-bottom: 2.4rem;
+  font-family: "../fonts/GothamCondensedMedium.otf", "Gotham Condensed",
+    sans-serif;
+  font-size: 2.6rem;
+  color: #27483e;
+  padding: 0.8rem 4.8rem;
+  margin-top: 2rem;
   cursor: pointer;
 }
 
 .promo-p {
   color: #fef9ef;
-  font-size: 4rem;
-  line-height: 1.2;
-  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  font-size: 3.6rem;
+  line-height: 1;
+  font-family: "../fonts/GothamCondensedMedium.otf", "Gotham Condensed",
+    sans-serif;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 /* SECTION - HERO  */
 .hero-container {
-  width: 1400px;
-  height: 900px;
+  height: 600px;
   display: grid;
   grid-template-columns: 2fr 4fr 3fr;
-  gap: 20px;
+  gap: 15px;
 }
 
 .img-container {
-  height: 100%;
+  max-height: 100%;
   width: 100%;
-  object-fit: cover;
+  background-size: cover;
   position: relative;
 }
 
 .hero-link {
   font-size: 4.2rem;
-  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  font-family: "../fonts/GothamCondensedMedium.otf", "Gotham Condensed",
+    sans-serif;
   text-decoration: underline;
   cursor: pointer;
   color: white;
@@ -133,22 +213,22 @@ header {
 }
 
 .one {
-  background-image: url(img/hero-shop.jpg);
+  background-image: url(../img/hero-shop.jpg);
   transition: 3s;
 }
 
 .one:hover {
+  visibility: visible;
   background-image: linear-gradient(
       rgba(10, 10, 10, 0.3),
       rgba(10, 10, 10, 0.3)
     ),
-    url(img/hero-shop.jpg);
-  /* filter: brightness(40%); */
+    url(../img/hero-shop.jpg);
 }
 
 .two {
   grid-row: 2 span;
-  background-image: url(img/hero-about.png);
+  background-image: url(../img/hero-about.png);
   transition: 3s;
 }
 
@@ -157,11 +237,11 @@ header {
       rgba(10, 10, 10, 0.3),
       rgba(10, 10, 10, 0.3)
     ),
-    url(img/hero-about.png);
-  /* filter: brightness(40%); */
+    url(../img/hero-about.png);
 }
+
 .three {
-  background-image: url(img/hero-app.png);
+  background-image: url(../img/hero-app.png);
   transition: 3s;
 }
 
@@ -170,12 +250,11 @@ header {
       rgba(10, 10, 10, 0.3),
       rgba(10, 10, 10, 0.3)
     ),
-    url(img/hero-app.png);
-  /* filter: brightness(40%); */
+    url(../img/hero-app.png);
 }
 
 .four {
-  background-image: url(img/hero-cookbooks.jpg);
+  background-image: url(../img/hero-cookbooks.jpg);
   transition: 3s;
 }
 
@@ -184,12 +263,11 @@ header {
       rgba(10, 10, 10, 0.3),
       rgba(10, 10, 10, 0.3)
     ),
-    url(img/hero-cookbooks.jpg);
-  /* filter: brightness(40%); */
+    url(../img/hero-cookbooks.jpg);
 }
 
 .five {
-  background-image: url(img/hero-plants.jpg);
+  background-image: url(../img/hero-plants.jpg);
   transition: 3s;
 }
 
@@ -198,8 +276,7 @@ header {
       rgba(10, 10, 10, 0.3),
       rgba(10, 10, 10, 0.3)
     ),
-    url(img/hero-plants.jpg);
-  /* filter: brightness(40%); */
+    url(../img/hero-plants.jpg);
 }
 
 .img-container:hover :not(img) {
@@ -207,37 +284,16 @@ header {
 }
 
 /* SECTION - SHOP  */
-.shop {
-  background-color: #fef9ef;
-  position: relative;
-  height: 1050px;
-}
-
-.shop-categories {
-  display: flex;
-  justify-content: center;
-  gap: 1.4rem;
-  padding-top: 6.8rem;
-  margin-bottom: 2rem;
-  border: none;
-  flex: 1 1 0;
+.container-lrg-flex--shop-mrg {
+  margin: 2rem 14rem;
 }
 
 .shop-ind {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: #b05045;
-  font-size: 4.2rem;
-  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  font-size: 3.2rem;
+  font-family: "../fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
   background-color: #fef9ef;
   cursor: pointer;
-}
-
-.btn-shop {
-  margin: 2rem;
-  text-align: center;
 }
 
 .btn-center-shop {
@@ -248,22 +304,8 @@ header {
 }
 
 /* SECTION - RECIPES  */
-.recipes {
-  background-color: #fef9ef;
-  position: relative;
-  height: 1000px;
-}
-
-.recipe-imgs {
-  display: flex;
-  justify-content: center;
-  gap: 1.4rem;
-  padding-top: 6.8rem;
-}
-
-.btn-recipes {
-  margin: 2rem;
-  text-align: center;
+.container-lrg-flex--recipes-mrg {
+  margin: 2rem 8rem;
 }
 
 .btn-center-recipes {
@@ -274,15 +316,14 @@ header {
 }
 
 /* SECTION - APP */
-.app-img {
-  flex: 1 1 0;
-  background-color: #d9480f;
+#btn-section--app {
+  padding: 1.6rem 9rem;
 }
 
 .app-store-links {
   display: flex;
   justify-content: center;
-  padding: 2.4rem 16rem;
+  padding: 2rem 10rem;
   gap: 2rem;
 }
 
@@ -291,15 +332,8 @@ header {
   max-height: 100%;
 }
 
-.app-info {
-  flex: 1 1 0;
-  align-self: center;
-  text-align: center;
-}
-
-.info-pad {
-  padding: 0 8rem;
-  padding-bottom: 3.2rem;
+.app-info-pad {
+  padding: 0 7.5rem;
 }
 
 /* SECTION - COOKBOOKS */
@@ -319,47 +353,37 @@ header {
   transform: translate(-50%, 50%);
   background-color: #fef9ef;
   text-align: center;
-  width: 650px;
-  padding: 5rem 4rem;
+  padding: 5rem 1rem;
 }
 
+.cookbooks-info--p {
+  width: 80%;
+  margin: 0 auto;
+}
 /* SECTION - PODCAST */
-.podcast-img {
-  flex: 1 1 0;
-}
-
-.podcast-info {
-  flex: 1 1 0;
-  align-self: center;
-  text-align: center;
+.podcast-info-pad {
+  padding: 0 3rem;
 }
 
 /* SECTION - RESTAURANT */
-.restaurant-img {
-  flex: 1 1 0;
-}
-
-.restaurant-info {
-  flex: 1 1 0;
-  align-self: center;
-  text-align: center;
+.restaurant-info-pad {
+  padding: 0 6rem;
 }
 
 /* SECTION - ABOUT US */
-.about-us-img {
-  flex: 1 1 0;
+.about-info-pad {
+  padding: 0 8rem;
 }
 
-.about-us-info {
-  flex: 1 1 0;
-  align-self: center;
-  text-align: center;
+/* SECTION - SML CONTAINER  */
+.info-pad {
+  padding-bottom: 3.2rem;
 }
 
 /* SECTION - CTA */
 .cta {
   margin-bottom: 2.4rem;
-  height: 300px;
+  height: 250px;
 }
 
 .cta,
@@ -371,55 +395,69 @@ select,
 }
 
 #h2-cta {
-  font-size: 8.2rem;
+  font-size: 6.4rem;
   color: #fef9ef;
+  padding-top: 5rem;
 }
 
 form {
-  padding-top: 3.2rem;
-  text-align: center;
+  padding-top: 2.6rem;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#first-name {
+  width: 15%;
+}
+
+#email {
+  width: 30%;
+}
+
+#country {
+  width: 35%;
 }
 
 input,
 select,
 .cta-btn {
   font-size: 3.2rem;
-  font-family: "fonts/GothamCondensedMedium.otf", "Gotham Condensed", sans-serif;
+  font-family: "../fonts/GothamCondensedMedium.otf", "Gotham Condensed",
+    sans-serif;
   font-weight: 400;
   color: #fef9ef;
 }
 
 input,
 select {
-  width: 30rem;
-  border-bottom: 5px solid #fef9ef;
+  width: 20rem;
+  border-bottom: 3px solid #fef9ef;
   margin: 0 1rem;
 }
 
 ::placeholder,
 select {
   color: #d8a8a2;
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 
 .cta-btn {
-  font-size: 4.6rem;
+  font-size: 3.6rem;
 }
 
 /* FOOTER */
-
 footer {
   color: #b05045;
-  width: 1000px;
+  width: 700px;
   margin: auto;
   text-align: center;
 }
 
 .social-media-links {
-  font-size: 5rem;
+  font-size: 3.6rem;
   display: flex;
   justify-content: center;
-  gap: 8.4rem;
+  gap: 6rem;
   padding: 2.4rem 0;
   border-bottom: 1.5px solid #b05045;
 }
@@ -430,11 +468,11 @@ footer {
 }
 
 .footer-links {
-  font-size: 3rem;
+  font-size: 2.2rem;
   display: flex;
   justify-content: space-between;
   padding: 6.6rem 0;
-  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  font-family: "../fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
 }
 
 .footer-link:link,
@@ -443,13 +481,14 @@ footer {
 }
 
 .footer-info {
-  font-size: 1.6rem;
-  font-family: "fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  font-size: 0.2rem;
+  font-family: "../fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
   margin-bottom: 12.8rem;
 }
 
 .footer-info-font {
-  font-family: "fonts/GothamCondensedLight.otf", "Gotham Con Light", sans-serif;
+  font-family: "../fonts/GothamCondensedLight.otf", "Gotham Con Light",
+    sans-serif;
   padding-bottom: 2.4rem;
 }
 
