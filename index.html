@@ -20,18 +20,51 @@
       @import url("https://fonts.cdnfonts.com/css/gotham-narrow-medium");
     </style>
 
-    <link href="style.css" rel="stylesheet" />
-    <link href="general.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/media-queries.css" rel="stylesheet" />
     <title>deliciously ella • delicious ways to feel better</title>
   </head>
   <body>
-    <div class="promo-banner">**15% off all orders with code jan15**</div>
+    <!-- <body class="overlay-open"> -->
+    <div class="overlay-container">
+      <ion-icon class="menu-overlay-icon" name="close-outline"></ion-icon>
+      <ul class="menu-overlay-container">
+        <li class="menu-overlay menu-overlay-chevron">
+          <a href="#">recipes</a>
+          <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+        </li>
+        <li class="menu-overlay menu-overlay-chevron">
+          <a href="#">shop</a
+          ><ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+        </li>
+        <li class="menu-overlay menu-overlay-chevron">
+          <a href="#">app</a
+          ><ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+        </li>
+        <li class="menu-overlay"><a href="#">cookbooks</a></li>
+        <li class="menu-overlay"><a href="#">podcast</a></li>
+        <li class="menu-overlay"><a href="#">restaurant</a></li>
+        <li class="menu-overlay"><a href="#">about</a></li>
+        <div class="menu-nav--basket">
+          <li class="menu-btn">
+            <a href="#">more</a>
+            <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+          </li>
+          <li class="nav-link">
+            <a href="#"><ion-icon name="bag-add"></ion-icon></a>
+          </li>
+        </div>
+        <ion-icon class="close-icon" name="close-outline"></ion-icon>
+      </ul>
+    </div>
+    <div class="promo-banner">EU orders ship from our EU warehouse!</div>
     <div class="container">
       <header>
-        <a href="#"
+        <a class="logo-container" href="#"
           ><img
             class="logo"
-            src="img/header-logo.png"
+            src="img/header-logo2.png"
             alt="deliciously ella logo"
         /></a>
         <nav class="nav-container">
@@ -50,14 +83,22 @@
             <li class="nav-link"><a href="#">recipes</a></li>
             <li class="nav-link"><a href="#">shop</a></li>
             <li class="nav-link"><a href="#">app</a></li>
-            <li class="nav-link"><a href="#">cookbooks</a></li>
-            <li class="nav-link"><a href="#">podcast</a></li>
-            <li class="nav-link"><a href="#">restaurant</a></li>
-            <li class="nav-link"><a href="#">about</a></li>
-            <li class="nav-link">
-              <a href="#"><ion-icon name="bag-add"></ion-icon></a>
-            </li>
+            <li class="nav-link nav-menu--2"><a href="#">cookbooks</a></li>
+            <li class="nav-link nav-menu--1"><a href="#">podcast</a></li>
+            <li class="nav-link nav-menu--1"><a href="#">restaurant</a></li>
+            <li class="nav-link nav-menu--1"><a href="#">about</a></li>
+            <div class="menu-nav--basket">
+              <li class="menu-btn">
+                <a href="#">more</a>
+                <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+              </li>
+              <li class="nav-link nav-menu--3">
+                <a href="#"><ion-icon name="bag-add"></ion-icon></a>
+              </li>
+            </div>
+            <ion-icon class="close-icon" name="close-outline"></ion-icon>
           </ul>
+
           <ul class="dropdown dd-recipes">
             <li><a href="#">breakfast</a></li>
             <li><a href="#">sweet</a></li>
@@ -89,15 +130,22 @@
           </div>
         </nav>
       </header>
-      <section class="margin-std container promo-header">
+      <section class="margin-std promo-header">
         <div class="promo-header-info">
-          <h3>new trail mix bars</h3>
-          <p class="promo-p">
-            the perfect delicious<br />
-            all natural snack
-          </p>
+          <h3>new plant nut butters</h3>
+          <p class="promo-p">jars of all natural deliciousness</p>
           <button class="btn">buy now</button>
+          <img
+            class="nutbutter-img"
+            src="../img/promo-header-responsive.png"
+            alt="Jar of plants Roasted & Salted Peanut Butter"
+          />
         </div>
+        <img
+          class="promo-header-img"
+          src="../img/promo-header.jpg"
+          alt="Breakfast options with jars of nut butters"
+        />
       </section>
       <section class="hero-container margin-std">
         <a href="#" class="img-container one"><p class="hero-link">shop</p></a>
@@ -110,57 +158,74 @@
           ><p class="hero-link">restaurant</p></a
         >
       </section>
-      <section class="container-lrg margin-std shop">
+
+      <section class="container-lrg margin-std">
         <h2>shop our products</h2>
-        <div class="shop-categories">
-          <button class="shop-ind">
+        <div class="container-lrg-flex container-lrg-flex--shop-mrg">
+          <button class="container-lrg-btn container-lrg-btn--shopall shop-ind">
             shop all
             <img
+              class="images"
               src="img/shop1.png"
               alt="Selection of deliciously ella products"
             />
           </button>
-          <button class="shop-ind">
+          <button
+            class="container-lrg-btn container-lrg-btn--breakfast shop-ind"
+          >
             breakfast
             <img
+              class="images"
               src="img/shop2.png"
               alt="selection of deliciously ella granola boxes with 2 bowls of granola"
             />
           </button>
-          <button class="shop-ind">
+          <button class="container-lrg-btn container-lrg-btn--snacks shop-ind">
             snacks
             <img
+              class="images"
               src="img/shop3.png"
               alt="Selection of deliciously ella chocolate bars surrounding with nuts and dried fruit"
             />
           </button>
         </div>
-        <button class="btn-section btn-shop btn-center-shop">shop all</button>
+        <button class="btn-section btn-center-shop">shop all</button>
       </section>
-      <section class="container-lrg margin-std recipes">
+      <section class="container-lrg container-lrg--recipes margin-std">
         <h2>recipes</h2>
-        <div class="recipe-imgs">
-          <img src="img/recipes1.jpg" alt="bowl of pea and courgette pasta" />
+        <div
+          class="container-lrg-flex container-lrg-flex--recipes container-lrg-flex--recipes-mrg"
+        >
           <img
+            class="images recipe-imgs recipe-imgs-1"
+            src="img/recipes1.jpg"
+            alt="bowl of pea and courgette pasta"
+          />
+          <img
+            class="images recipe-imgs recipe-imgs-2"
             src="img/recipes2.jpg"
             alt="plate of delicious brownies with chocolate sauce poured over them"
           />
-          <img src="img/recipes3.jpg" alt="plate of mixed bean tacos" />
+          <img
+            class="images recipe-imgs recipe-imgs-3"
+            src="img/recipes3.jpg"
+            alt="plate of mixed bean tacos"
+          />
         </div>
-        <button class="btn-section btn-recipes btn-center-recipes">
-          see our recipes
-        </button>
+        <button class="btn-section btn-center-recipes">see our recipes</button>
       </section>
-      <section class="margin-std sml app">
-        <div class="app-info">
+      <section class="margin-std sml">
+        <div class="sml-flex">
           <h4>feel better by de</h4>
-          <p class="info-pad">
+          <p class="info-pad app-info-pad">
             welcome to the next evolution of the deliciously ella app,
             introducing feel better by de; the simplest, most effective,
             inspiring tool in wellness, helping you to feel better every single
             day
           </p>
-          <button class="btn-section">start your free trial now</button>
+          <button class="btn-section" id="btn-section--app">
+            start your free trial now
+          </button>
           <div class="app-store-links">
             <a
               href="https://apps.apple.com/us/app/deliciously-ella-app/id1445510165"
@@ -182,11 +247,13 @@
             </a>
           </div>
         </div>
-        <img
-          class="app-img"
-          src="img/CTA-app.png"
-          alt="The 'feel better' app show on laptop, tablet and smartphone"
-        />
+        <div class="container-sml-img">
+          <img
+            class="sml-img"
+            src="img/CTA-app.png"
+            alt="The 'feel better' app show on laptop, tablet and smartphone"
+          />
+        </div>
       </section>
       <section class="margin-std med cookbooks">
         <img
@@ -196,23 +263,25 @@
         />
         <div class="cookbooks-info">
           <h4>cookbooks</h4>
-          <p>
+          <p class="cookbooks-info--p">
             explore our range of bestselling cookbooks by our founder and award
             winning author, ella mills
           </p>
           <button class="btn-section">see our cookbooks</button>
         </div>
       </section>
-      <section class="margin-std sml podcast">
-        <img
-          class="podcast-img"
-          src="img/podcast.png"
-          alt="Photo of Ella and Matt Mills. 'delicious ways to feel better.' wording"
-        />
-        <div class="podcast-info">
+      <section class="margin-std sml sml-pod-aboutus">
+        <div class="container-sml-img">
+          <img
+            class="sml-img sml-img-responsive podcast-img"
+            src="img/podcast.png"
+            alt="Photo of Ella and Matt Mills. 'delicious ways to feel better.' wording"
+          />
+        </div>
+        <div class="podcast-info sml-flex">
           <h4>this week's podcast</h4>
           <h5>how to supercharge your brain</h5>
-          <p>
+          <p class="info-pad podcast-info-pad">
             this week we're looking at the practical advice on how to maximise,
             nuture and sustain your brain health with professor james goodwin, a
             leading expert on brain health. from managing...
@@ -220,10 +289,10 @@
           <button class="btn-section">listen to the podcast</button>
         </div>
       </section>
-      <section class="margin-std sml restaurant">
-        <div class="restaurant-info">
+      <section class="margin-std sml">
+        <div class="sml-flex">
           <h4>our restaurant</h4>
-          <p class="info-pad">
+          <p class="info-pad restaurant-info-pad">
             our london restaurant, plants by de, is our new home of plant-based
             food. we're passionate about natural, plant-based food, that
             highlights the delicious diversity and abundance of plants, and
@@ -231,21 +300,25 @@
           </p>
           <button class="btn-section">find out more</button>
         </div>
-        <img
-          class="restaurant-img"
-          src="img/restaurant.jpeg"
-          alt="Outside photo of Plants restaurant"
-        />
+        <div class="container-sml-img">
+          <img
+            class="sml-img sml-img-responsive"
+            src="img/restaurant.jpeg"
+            alt="Outside photo of Plants restaurant"
+          />
+        </div>
       </section>
-      <section class="margin-std sml about-us">
-        <img
-          class="about-us-img"
-          src="img/about-us.png"
-          alt="Photo of Ella and Matt Mills with their dog"
-        />
-        <div class="about-us-info">
+      <section class="margin-std sml sml-pod-aboutus">
+        <div class="container-sml-img">
+          <img
+            class="sml-img sml-img-responsive"
+            src="img/about-us.png"
+            alt="Photo of Ella and Matt Mills with their dog"
+          />
+        </div>
+        <div class="sml-flex">
           <h4>about us</h4>
-          <p class="info-pad">
+          <p class="info-pad about-info-pad">
             deliciously ella is a resource to help you live better and make
             vegetables cool. starting with a personal blog, we've evolved in to
             an app, recipe books, a deli, and a range of plant-based food
@@ -254,7 +327,7 @@
           <button class="btn-section">more about us</button>
         </div>
       </section>
-      <section class="cta">
+      <section class="cta cta-container">
         <h2 id="h2-cta">sign up to our newsletter</h2>
         <form class="cta-form" action="#">
           <input
@@ -577,6 +650,7 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
+
           <button class="cta-btn">sign up</button>
         </form>
       </section>
@@ -608,11 +682,21 @@
         ></a>
       </div>
       <div class="footer-links">
-        <a class="footer-link" href="#">delivery &amp; returns</a>
-        <a class="footer-link" href="#">privacy &amp; cookie policy</a>
-        <a class="footer-link" href="#">terms &amp; conditions</a>
-        <a class="footer-link" href="#">sustainability</a>
-        <a class="footer-link" href="#">contact</a>
+        <a class="footer-link footer-link--one footer-link--start" href="#"
+          >delivery &amp; returns</a
+        >
+        <a class="footer-link footer-link--two" href="#"
+          >privacy &amp; cookie policy</a
+        >
+        <a class="footer-link footer-link--three footer-link--end" href="#"
+          >terms &amp; conditions</a
+        >
+        <a class="footer-link footer-link--four footer-link--start" href="#"
+          >sustainability</a
+        >
+        <a class="footer-link footer-link--five footer-link--end" href="#"
+          >contact</a
+        >
       </div>
       <div class="footer-info">
         <p class="footer-info-font copyright">
