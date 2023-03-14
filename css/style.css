@@ -60,13 +60,51 @@
   text-align: center;
 }
 
+/* NOTIFICATION  */
+.notification {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 1.5rem 0;
+  background-color: #fef9ef;
+  color: #ba7729;
+}
+
+.notification p {
+  font-family: "Freight Big Light Regular", serif;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.notification-btn {
+  border: none;
+  font-family: inherit;
+  background-color: #ba7729;
+  color: #fef9ef;
+  font-size: 2rem;
+  padding: 0.8rem 4rem;
+  cursor: pointer;
+}
+
+.notification-eu {
+  background-color: #e5f1f4;
+  color: #007298;
+}
+
+.notification-btn-eu {
+  background-color: #007298;
+  color: #f2f8fa;
+}
+
 /* HEADER */
 header {
   display: flex;
   padding: 2rem 0;
   justify-content: space-between;
   width: 95%;
-  margin-left: 40px;
+  /* margin-left: 10px; */
 }
 
 .logo {
@@ -86,7 +124,19 @@ header {
   justify-content: space-between;
   font-family: "../fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
   font-size: 2.8rem;
-  gap: 70px;
+  gap: 74px;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-li {
+  padding: 0.5rem 1rem;
+}
+
+.nav-li:hover {
+  color: #fef9ef;
+  background-color: #b05045;
 }
 
 .menu-btn {
@@ -104,28 +154,35 @@ header {
   display: none;
 }
 
-.delivery-choice {
-  border: none;
-  background: none;
+.del-dd-container {
   font-size: 1.6rem;
   font-family: "../fonts/GothamBook.otf", "Gotham Book", sans-serif;
-  color: #b07445;
+  color: #ba7729;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.5px;
-  width: 200px;
   align-self: flex-end;
   margin: 0.4rem 1.6rem 0.8rem;
   cursor: pointer;
-}
-
-.del {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #b07445;
+  border: 1px solid #ba7729;
   padding: 0.4rem 1.4rem;
   border-radius: 10px;
+  width: 200px;
+}
+
+.del {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.del p {
+  padding: 0;
 }
 
 .flag {
@@ -136,12 +193,85 @@ header {
   font-size: 2.4rem;
 }
 
-.dropdown {
-  visibility: hidden;
+.del-choice-dropdown {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 50px;
+  right: 16px;
+  border: 1px solid #ba7729;
+  width: 200px;
+  z-index: 9999;
+  padding: 1rem 0;
+  background-color: white;
 }
+
+.del-choice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background-color: white;
+  font-family: "../fonts/GothamCondensedBold.otf", "Gotham Con Bold", sans-serif;
+  font-size: 1.6rem;
+  color: #5e1b44;
+  cursor: pointer;
+  padding: 0.8rem 0;
+}
+
+.dropdown-flag {
+  padding-left: 6px;
+  width: 40px;
+}
+.del-choice:hover {
+  background-color: #f9f9f9;
+}
+
+.dd {
+  z-index: 9999;
+  background-color: #b05045;
+  list-style: none;
+  padding: 3rem 3rem;
+}
+
+.dd-list-item {
+  margin: 3rem 0;
+}
+.dd-link {
+  color: #fef9ef;
+  font-size: 2.4rem;
+}
+
+.dd-light {
+  color: #d39e98;
+}
+
+.dd-shop-container {
+  z-index: 99999;
+  display: flex;
+  background-color: #b05045;
+  width: 92rem;
+  gap: 100px;
+  position: absolute;
+  top: 36px;
+  left: -140px;
+}
+
+.dd-position {
+  position: absolute;
+  top: 36px;
+  left: 0;
+}
+
+.dd-recipes {
+  width: 22rem;
+}
+
+.dd-app {
+  width: 16rem;
+}
+
 /* PROMO-HEADER */
 .promo-header {
   background-color: #27483e;
@@ -166,10 +296,10 @@ header {
   border: none;
   font-family: "../fonts/GothamCondensedMedium.otf", "Gotham Condensed",
     sans-serif;
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   color: #27483e;
-  padding: 0.8rem 4.8rem;
-  margin-top: 2rem;
+  padding: 0.8rem 5.2rem;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
@@ -395,7 +525,7 @@ select,
 }
 
 #h2-cta {
-  font-size: 6.4rem;
+  font-size: 6.8rem;
   color: #fef9ef;
   padding-top: 5rem;
 }
@@ -494,4 +624,8 @@ footer {
 
 .a-footer {
   text-decoration: underline;
+}
+
+.hidden {
+  display: none;
 }

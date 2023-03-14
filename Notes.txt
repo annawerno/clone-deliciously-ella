@@ -1,0 +1,20 @@
+DELIVERY OPTIONS & NOTIFICATIONS
+
+1. click "del-dd-container" ✅
+2. "two" box to appear/disappear (toggle?) ✅
+3. close "two" box when "del-option-1" or "del-option-2" is selected ✅
+4. update "del-dd-container" with selected option
+- a. when delChoiceUK is selected, updated 'del-dd-container' to show 'del-option-one', remove 'del-option-2' ✅
+5. show corresponding notification ✅
+6. clear notification function (location.relaod()) <- only gets UK delivery notification back
+
+
+MENU DROPDOWNS
+
+Styling:
+1. set recipes menu ✅
+2. set shop menu ✅
+3. set app menu ✅
+
+1. hover over menu link and reverse colours ✅
+2. display drop down menu ✅
