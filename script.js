@@ -51,34 +51,29 @@ moreBtnEl.forEach((element) => {
   });
 });
 
-// DROPDOWN MENUS FOR NAVIGATION LINKS
-const ddRecipes = document.querySelector(".dd-recipes");
-const ddApp = document.querySelector(".dd-app");
-const ddShop = document.querySelector(".dd-shop-container");
-const navLinkRecipes = document.querySelector(".nav-li-recipes");
-const navLinkApp = document.querySelector(".nav-li-app");
-const navLinkShop = document.querySelector(".nav-li-shop");
+function setupNavLinks() {
+  const navLinks = ["recipes", "app", "shop"];
 
-navLinkRecipes.addEventListener("mouseenter", function () {
-  ddRecipes.classList.remove("hidden");
-});
+  for (let i = 0; i < navLinks.length; i++) {
+    const navLink = navLinks[i];
+    // const navNode = document.querySelector(".nav-link-" + navLink)
+    const navNode = document.querySelector(`.nav-li-${navLink}`);
 
-navLinkRecipes.addEventListener("mouseout", function () {
-  ddRecipes.classList.add("hidden");
-});
+    let dropdownClass = `.dd-${navLink}`;
+    if (navLink === "shop") {
+      dropdownClass = dropdownClass + "-container";
+    }
 
-navLinkApp.addEventListener("mouseenter", function () {
-  ddApp.classList.remove("hidden");
-});
+    const dropdownNode = document.querySelector(dropdownClass);
 
-navLinkApp.addEventListener("mouseout", function () {
-  ddApp.classList.add("hidden");
-});
+    navNode.addEventListener("mouseenter", function () {
+      dropdownNode.classList.remove("hidden");
+    });
 
-navLinkShop.addEventListener("mouseenter", function () {
-  ddShop.classList.remove("hidden");
-});
+    navNode.addEventListener("mouseout", function () {
+      dropdownNode.classList.add("hidden");
+    });
+  }
+}
 
-navLinkShop.addEventListener("mouseout", function () {
-  ddShop.classList.add("hidden");
-});
+setupNavLinks();
