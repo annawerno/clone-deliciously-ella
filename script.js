@@ -1,43 +1,48 @@
-const dropdownDelContainer = document.querySelector(".del-dd-container");
-const dropdownOptions = document.querySelector(".del-choice-dropdown");
-const delChoice = document.querySelectorAll(".del-choice");
-const delChoiceUK = document.querySelector(".del-choice-uk");
-const delChoiceEU = document.querySelector(".del-choice-eu");
-const delOptionUK = document.querySelector(".del-option-uk");
-const delOptionEU = document.querySelector(".del-option-eu");
-const notificationUK = document.querySelector(".notification-uk");
-const notificationEU = document.querySelector(".notification-eu");
-
+// NOTIFICATION
 const notificationBannerEl = document.querySelectorAll(".notification");
 const notificationBtnEl = document.querySelectorAll(".notification-btn");
 
-// NOTIFICATION
-notificationBtnEl.forEach((element, index) => {
-  element.addEventListener("click", function () {
-    notificationBannerEl[index].remove();
+function notificationCleared() {
+  notificationBtnEl.forEach((element, index) => {
+    element.addEventListener("click", function () {
+      notificationBannerEl[index].remove();
+    });
   });
-});
+}
+notificationCleared();
 
 // DELIVERY CHOICE
-dropdownDelContainer.addEventListener("click", function () {
-  dropdownOptions.classList.toggle("hidden");
-});
+const delBtns = document.querySelectorAll(".del-btns");
+const dropdownSelection = document.querySelector(".del-dd-selection");
+
+for (i = 0; i < delBtns.length; i++) {
+  delBtns[i].addEventListener("click", function () {
+    dropdownSelection.classList.toggle("hidden");
+  });
+}
+
+const deliveryUK = "uk";
+const deliveryEU = "eu";
+const delOptionUK = document.querySelector(".del-option-uk");
+const delOptionEU = document.querySelector(".del-option-eu");
+const delChoiceUK = document.querySelector(".del-choice-uk");
+const delChoiceEU = document.querySelector(".del-choice-eu");
+const notificationUK = document.querySelector(".notification-uk");
+const notificationEU = document.querySelector(".notification-eu");
+
+function showDeliveryOption(option) {
+  delOptionUK.classList.toggle("hidden", option !== deliveryUK);
+  delOptionEU.classList.toggle("hidden", option !== deliveryEU);
+  notificationUK.classList.toggle("hidden", option !== deliveryUK);
+  notificationEU.classList.toggle("hidden", option !== deliveryEU);
+}
 
 delChoiceUK.addEventListener("click", function () {
-  dropdownOptions.classList.add("hidden");
-  delOptionUK.classList.remove("hidden");
-  delOptionEU.classList.add("hidden");
-  notificationEU.classList.add("hidden");
-  notificationUK.classList.remove("hidden");
-  location.reload();
+  showDeliveryOption(deliveryUK);
 });
 
 delChoiceEU.addEventListener("click", function () {
-  dropdownOptions.classList.add("hidden");
-  delOptionUK.classList.add("hidden");
-  delOptionEU.classList.remove("hidden");
-  notificationUK.classList.add("hidden");
-  notificationEU.classList.remove("hidden");
+  showDeliveryOption(deliveryEU);
 });
 
 // MENU OVERLAY
@@ -51,6 +56,7 @@ moreBtnEl.forEach((element) => {
   });
 });
 
+// NAVIGATION LINKS
 function setupNavLinks() {
   const navLinks = ["recipes", "app", "shop"];
 
